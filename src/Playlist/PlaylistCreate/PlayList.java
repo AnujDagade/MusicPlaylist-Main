@@ -20,11 +20,12 @@ public class PlayList {
     }
 
     public String toString() {
-        String names = null;
+        String names = new String();
         Iterator<Song> itr = songs.iterator();
         while(itr.hasNext())
         {
-            names = itr.next().toString();
+            names += itr.next().toString();
+
         }
         return names;
     }
